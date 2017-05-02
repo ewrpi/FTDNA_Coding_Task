@@ -1,0 +1,22 @@
+<h1>Web API</h1>
+
+<ul>
+    <li><a href='/api/sampledata/samples' target="_blank">Display All (Item 1)</a></li>
+	<li>Display By Status (Item 2)
+		[<a href='/api/sampledata/samples?status=Received' target="_blank">Received</a>] 
+		[<a href='/api/sampledata/samples?status=Accessioning' target="_blank">Accessioning</a>] 
+		[<a href='/api/sampledata/samples?status=In Lab' target="_blank">In Lab</a>] 
+		[<a href='/api/sampledata/samples?status=Report Generation' target="_blank">Report Generation</a>] 
+	</li>
+	<li>Display By Name Search (Item 3)<br />
+		Enter Search Criteria <input type="text" id="nameSearch" /> 
+		<a style="cursor:pointer;" onclick="window.open('/api/sampledata/samples?nameSearch=' + document.getElementById('nameSearch').value)">Click Here to Search</a>
+	</li>
+	<li>
+		Add Record (Item 4)<br />
+		Bar Code <input type="text" id="barcode" /><br />
+		Name <input type="text" id="fullname" /><br />
+		Status <input type="text" id="status" /><br />
+		<a style="cursor:pointer;" onclick="window.open('/api/sampledata/add?barcode=' + document.getElementById('barcode').value + '&status=' + document.getElementById('status').value + '&name=' + document.getElementById('fullname').value)">Add Record</a>
+	</li>
+</ul>

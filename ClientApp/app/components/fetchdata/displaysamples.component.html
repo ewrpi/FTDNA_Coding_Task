@@ -1,0 +1,22 @@
+<h1>Samples</h1>
+
+<p *ngIf="!samples"><em>Loading...</em></p>
+
+<table class='table' *ngIf="samples">
+    <thead>
+        <tr>
+            <th>Bar Code</th>
+            <th>Created At</th>
+            <th>Status</th>
+            <th>Created By</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let sample of samples">
+            <td>{{ sample.barCode }}</td>
+            <td>{{ sample.createdAt }}</td>
+            <td>{{ sample.status }}</td>
+            <td>{{ sample.createdBy }}</td>
+        </tr>
+    </tbody>
+</table>
