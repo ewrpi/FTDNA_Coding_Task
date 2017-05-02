@@ -1,3 +1,10 @@
+To run program:
+1- build solution
+2- attach database files to sql server instance (DB/*.mdf,*.ldf)
+3- modify database connection string in Startup.cs, method ConfigureServices
+
+
+NOTES ------------
 Task Repo
 https://github.com/genebygene/FTDNA_Coding_Task
 
