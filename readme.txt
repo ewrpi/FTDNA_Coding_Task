@@ -4,6 +4,9 @@ To run program:
 2- modify database connection string in Startup.cs, method ConfigureServices
 3- build and run solution 
 
+Note: may deploy demo here (WIP as of 5/3)
+http://genebygene.hackerdevs.com
+
 
 NOTES ------------
 Task Repo
