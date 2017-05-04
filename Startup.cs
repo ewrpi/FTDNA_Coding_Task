@@ -33,7 +33,7 @@ namespace FTDNA_Coding_Task
             // Add framework services.
             services.AddMvc();
 
-			var connection = @"Server=localhost\SQLEXPRESS01;Database=FTDNA_Coding_Task;Trusted_Connection=True;";
+			var connection = @"Server=localhost\SQLEXPRESS;Database=FTDNA_Coding_Task;Trusted_Connection=True;";
 			services.AddDbContext<Models.DataContext>(options => options.UseSqlServer(connection));
 		}
 
